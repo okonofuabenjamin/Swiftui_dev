@@ -1,0 +1,115 @@
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        ZStack {
+            VStack {
+                Text("案件編號")
+                    .font(.largeTitle)
+                    .frame(width: 605, height: 40, alignment: .leading)
+                    .lineSpacing(22)
+                    .padding(.vertical, 22)
+                    .padding(.leading, 20)
+                    .padding(.trailing, 19)
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(red: 0.73, green: 0.73, blue: 0.76), lineWidth: 1))
+                    .offset(x: -778, y: -238)
+
+                Text("2023/4/15")
+                    .font(.largeTitle)
+                    .frame(width: 453, height: 40, alignment: .leading)
+                    .lineSpacing(22)
+                    .padding(.vertical, 22)
+                    .padding(.leading, 19)
+                    .padding(.trailing, 20)
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(red: 0.73, green: 0.73, blue: 0.76), lineWidth: 1))
+                    .offset(x: -702, y: -342)
+
+                Text("2023/4/15")
+                    .font(.largeTitle)
+                    .frame(width: 453, height: 40, alignment: .leading)
+                    .lineSpacing(22)
+                    .padding(.vertical, 22)
+                    .padding(.leading, 19)
+                    .padding(.trailing, 20)
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(red: 0.73, green: 0.73, blue: 0.76), lineWidth: 1))
+                    .offset(x: -114, y: -342)
+
+                Text("查詢日期")
+                    .font(.largeTitle)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 136, height: 40)
+                    .lineSpacing(22)
+                    .offset(x: -1032, y: -342)
+
+                Text("至")
+                    .font(.largeTitle)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 54, height: 40)
+                    .lineSpacing(22)
+                    .offset(x: -408, y: -342)
+            }
+            .frame(width: 2200, height: 120)
+            .background(Color.white)
+
+            VStack(alignment: .trailing, spacing: 0) {
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(Color(red: 0.50, green: 0.23, blue: 0.27, opacity: 0.50))
+                    .frame(width: 52, height: 52)
+                    .padding(.vertical, 34)
+                    .padding(.leading, 2074)
+                    .padding(.trailing, 74)
+                    .frame(width: 2200, height: 120)
+                    .background(Color.white)
+
+                Rectangle()
+                    .frame(width: 2140, height: 1)
+            }
+            .offset(x: 0, y: 93)
+            .frame(width: 2200, height: 120)
+
+            VStack(alignment: .trailing, spacing: 0) {
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(Color(red: 0.50, green: 0.23, blue: 0.27, opacity: 0.50))
+                    .frame(width: 52, height: 52)
+                    .padding(.vertical, 34)
+                    .padding(.leading, 2074)
+                    .padding(.trailing, 74)
+                    .frame(width: 2200, height: 120)
+                    .background(Color.white)
+
+                Rectangle()
+                    .frame(width: 2140, height: 1)
+            }
+            .offset(x: 0, y: 465)
+            .frame(width: 2200, height: 120)
+
+            VStack(alignment: .trailing, spacing: 0) {
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(Color(red: 0.50, green: 0.23, blue: 0.27, opacity: 0.50))
+                    .frame(width: 52, height: 52)
+                    .padding(.vertical, 34)
+                    .padding(.leading, 2074)
+                    .padding(.trailing, 74)
+                    .frame(width: 2200, height: 120)
+                    .background(Color.white)
+
+                Rectangle()
+                    .frame(width: 2140, height: 1)
+            }
+            .offset(x: 0, y: 957)
+            .frame(width: 2200, height: 120)
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
