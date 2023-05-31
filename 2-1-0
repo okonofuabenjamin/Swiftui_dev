@@ -1,0 +1,132 @@
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        ZStack {
+            Group {
+                VStack(alignment: .leading) {
+                    HStack(alignment: .bottom, spacing: 0) {
+                        RoundedRectangle(cornerRadius: 8)
+                            .fill(Color(red: 0.50, green: 0.23, blue: 0.27, opacity: 0.50))
+                            .frame(width: 253.87, height: 119.01)
+                            .padding(.leading, 1)
+                            .padding(.top, 3)
+                            .padding(.bottom, 1)
+                            .frame(width: 254.64, height: 122.85)
+                            .padding(.leading, 23)
+                            .padding(.trailing, 24)
+                            .padding(.top, 23)
+                            .padding(.bottom, 24)
+                            .frame(width: 301, height: 169.31)
+                            .frame(width: 301, height: 169.31)
+
+                        Text("遊戲場檢驗系統")
+                            .font(.largeTitle)
+                            .multilineTextAlignment(.center)
+                            .frame(width: 486, height: 141.88)
+                            .lineSpacing(22)
+                    }
+                    .frame(width: 787, height: 169.31)
+
+                    VStack(spacing: 715.94) {
+                        Rectangle()
+                            .rotationEffect(.degrees(-90))
+                            .frame(width: 62.27, height: 1)
+
+                        HStack(spacing: 161.67) {
+                            RoundedRectangle(cornerRadius: 12)
+                                .fill(Color(red: 0.96, green: 0.51, blue: 0.13))
+                                .frame(width: 727, height: 105.16)
+                                .shadow(radius: 2, y: 1)
+
+                            Text("工案清單")
+                                .font(.largeTitle)
+                                .multilineTextAlignment(.center)
+                                .frame(width: 238, height: 55.35)
+                                .lineSpacing(22)
+
+                            Text("案件下載")
+                                .font(.largeTitle)
+                                .multilineTextAlignment(.center)
+                                .frame(width: 269, height: 63.65)
+                                .lineSpacing(22)
+
+                            Text("歷史清單")
+                                .font(.largeTitle)
+                                .multilineTextAlignment(.center)
+                                .frame(width: 270, height: 63.65)
+                                .lineSpacing(22)
+                        }
+                        .padding(.vertical, 7)
+                        .padding(.trailing, 205)
+                        .frame(width: 2194, height: 119)
+                        .background(Color(red: 0.90, green: 0.90, blue: 0.90))
+                        .cornerRadius(12)
+                    }
+                    .frame(width: 2194, height: 119)
+                }
+                .padding(.leading, 35)
+                .padding(.trailing, 131)
+                .padding(.top, 40)
+                .padding(.bottom, 38)
+                .offset(x: 47, y: -553)
+                .frame(width: 2360, height: 382)
+                .background(Color(red: 0.97, green: 0.97, blue: 0.97))
+
+                VStack(alignment: .trailing, spacing: 0) {
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(Color.white)
+                        .frame(width: 2105, height: 120)
+
+                    Rectangle()
+                        .rotationEffect(.degrees(-90))
+                        .frame(width: 62.27, height: 1)
+
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(Color.white)
+                        .frame(width: 2105, height: 370)
+
+                    Text("歷史清單")
+                        .font(.largeTitle)
+                        .multilineTextAlignment(.center)
+                        .frame(width: 302, height: 61)
+                        .lineSpacing(22)
+                        .offset(x: 0, y: -170)
+
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(Color.white)
+                        .frame(width: 2105, height: 588)
+
+                    Text("案件下載")
+                        .font(.largeTitle)
+                        .multilineTextAlignment(.center)
+                        .frame(width: 292, height: 61)
+                        .lineSpacing(22)
+                        .offset(x: 0, y: -325)
+
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(Color.white)
+                        .frame(width: 2105, height: 815)
+
+                    Text("工案清單")
+                        .font(.largeTitle)
+                        .multilineTextAlignment(.center)
+                        .frame(width: 288, height: 61)
+                        .lineSpacing(22)
+                        .offset(x: 0, y: -480)
+                }
+                .padding(.trailing, 33)
+                .padding(.top, 33)
+                .padding(.bottom, 34)
+                .frame(width: 2283, height: 1159)
+                .background(Color(red: 0.97, green: 0.97, blue: 0.97))
+            }
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
