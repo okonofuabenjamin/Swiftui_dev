@@ -1,0 +1,67 @@
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        ZStack {
+            Color(red: 0.97, green: 0.97, blue: 0.97)
+                .ignoresSafeArea()
+            
+            VStack(spacing: 20) {
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(Color(red: 0.50, green: 0.23, blue: 0.27, opacity: 0.50))
+                    .frame(width: 324.85, height: 156.73)
+                
+                Text("遊戲場檢驗系統")
+                    .font(.largeTitle)
+                    .italic()
+                    .multilineTextAlignment(.center)
+                    .frame(width: 848, height: 92)
+                    .lineSpacing(22)
+                    .opacity(0.90)
+                
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(Color.white)
+                    .frame(width: 846, height: 115)
+                
+                Text("登入帳號")
+                    .font(.largeTitle)
+                    .frame(width: 766, height: 52, alignment: .leading)
+                    .lineSpacing(22)
+                
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(Color.white)
+                    .frame(width: 846, height: 115)
+                
+                Text("密碼 (英數混合8位數以上)")
+                    .font(.largeTitle)
+                    .frame(width: 766, height: 50, alignment: .leading)
+                    .lineSpacing(22)
+                
+                Button(action: {
+                    // Login button action
+                }) {
+                    Text("登   入")
+                        .font(.largeTitle)
+                        .frame(width: 148, height: 44)
+                        .foregroundColor(.white)
+                        .background(Color(red: 0.80, green: 0.81, blue: 0.83))
+                        .cornerRadius(8)
+                }
+                
+                Text("Ver 1.0.0")
+                    .font(.largeTitle)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 848, height: 54)
+                    .lineSpacing(22)
+            }
+            .foregroundColor(.black)
+            .padding()
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
