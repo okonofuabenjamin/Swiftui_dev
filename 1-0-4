@@ -1,0 +1,151 @@
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack(spacing: 8) {
+            Rectangle()
+                .fill(Color(red: 0.50, green: 0.23, blue: 0.27, opacity: 0.50))
+                .frame(width: 2383, height: 1788)
+            
+            Text("Ver 1.0.0")
+                .font(.largeTitle)
+                .multilineTextAlignment(.center)
+                .frame(width: 848, height: 54)
+                .lineSpacing(22)
+            
+            RoundedRectangle(cornerRadius: 8)
+                .fill(Color(red: 0.50, green: 0.23, blue: 0.27, opacity: 0.50))
+                .frame(width: 323.87, height: 151.83)
+                .padding(.leading, 1)
+                .padding(.top, 4)
+                .padding(.bottom, 1)
+                .frame(width: 324.85, height: 156.73)
+                .padding(.leading, 29)
+                .padding(.trailing, 30)
+                .padding(.top, 29)
+                .padding(.bottom, 30)
+                .frame(width: 384, height: 216)
+                .frame(width: 384, height: 216)
+            
+            RoundedRectangle(cornerRadius: 8)
+                .fill(Color.white)
+                .frame(width: 846, height: 115)
+            
+            Text("SGS0012345")
+                .italic()
+                .font(.largeTitle)
+                .frame(width: 766, height: 52, alignment: .leading)
+                .lineSpacing(22)
+            
+            RoundedRectangle(cornerRadius: 8)
+                .fill(Color.white)
+                .frame(width: 846, height: 115)
+            
+            HStack {
+                Ellipse()
+                    .fill(Color.black)
+                    .frame(width: 20, height: 20)
+                
+                Ellipse()
+                    .fill(Color.black)
+                    .frame(width: 20, height: 20)
+                
+                Ellipse()
+                    .fill(Color.black)
+                    .frame(width: 20, height: 20)
+                
+                Ellipse()
+                    .fill(Color.black)
+                    .frame(width: 20, height: 20)
+                
+                Ellipse()
+                    .fill(Color.black)
+                    .frame(width: 20, height: 20)
+                
+                Ellipse()
+                    .fill(Color.black)
+                    .frame(width: 20, height: 20)
+                
+                Ellipse()
+                    .fill(Color.black)
+                    .frame(width: 20, height: 20)
+                
+                Ellipse()
+                    .fill(Color.black)
+                    .frame(width: 20, height: 20)
+            }
+            
+            Text("登   入")
+                .font(.largeTitle)
+                .multilineTextAlignment(.center)
+                .frame(width: 148, height: 44)
+                .lineSpacing(22)
+                .padding(16)
+                .frame(width: 850, height: 108)
+                .background(Color(red: 0.93, green: 0.44, blue: 0.18))
+                .cornerRadius(8)
+            
+            Text("遊戲場檢驗系統")
+                .italic()
+                .font(.largeTitle)
+                .multilineTextAlignment(.center)
+                .frame(width: 846, height: 92)
+                .lineSpacing(22)
+                .opacity(0.90)
+            
+            VStack(spacing: 8) {
+                Text("請輸入註冊信箱中的驗證碼")
+                    .italic()
+                    .font(.largeTitle)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 459, height: 54)
+                    .lineSpacing(22)
+                
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(Color.white)
+                    .frame(width: 468, height: 74)
+                    .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color(red: 0.73, green: 0.73, blue: 0.76), lineWidth: 1))
+                
+                Text("驗證碼")
+                    .font(.largeTitle)
+                    .frame(width: 428, height: 30, alignment: .leading)
+                    .lineSpacing(22)
+                
+                Rectangle()
+                    .rotationEffect(.degrees(-90))
+                    .frame(width: 85.32, height: 1)
+                
+                Rectangle()
+                    .frame(width: 511.90, height: 1)
+                
+                Text("確認")
+                    .italic()
+                    .font(.largeTitle)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 64, height: 24)
+                    .lineSpacing(22)
+                
+                Text("取消")
+                    .italic()
+                    .font(.largeTitle)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 64, height: 24)
+                    .lineSpacing(22)
+            }
+            .padding(.leading, 49)
+            .padding(.trailing, 46)
+            .padding(.top, 66)
+            .padding(.bottom, 34)
+            .frame(width: 607, height: 356)
+            .background(Color.white)
+            .cornerRadius(24)
+            .frame(width: 607, height: 356)
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
