@@ -1,0 +1,89 @@
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            Rectangle()
+                .fill(Color(red: 0.50, green: 0.23, blue: 0.27, opacity: 0.50))
+                .frame(width: 2383, height: 1788)
+            
+            RoundedRectangle(cornerRadius: 8)
+                .fill(Color.white)
+                .frame(width: 846, height: 115)
+            
+            Text("SGS0012345")
+                .italic()
+                .font(.largeTitle)
+                .frame(width: 766, height: 52, alignment: .leading)
+                .lineSpacing(22)
+            
+            RoundedRectangle(cornerRadius: 8)
+                .fill(Color.white)
+                .frame(width: 846, height: 115)
+            
+            HStack {
+                Ellipse()
+                    .fill(Color.black)
+                    .frame(width: 20, height: 20)
+                
+                Ellipse()
+                    .fill(Color.black)
+                    .frame(width: 20, height: 20)
+                
+                Ellipse()
+                    .fill(Color.black)
+                    .frame(width: 20, height: 20)
+            }
+            
+            Text("登   入")
+                .font(.largeTitle)
+                .multilineTextAlignment(.center)
+                .frame(width: 148, height: 44)
+                .lineSpacing(22)
+                .padding(16)
+                .frame(width: 850, height: 108)
+                .background(Color(red: 0.93, green: 0.44, blue: 0.18))
+                .cornerRadius(8)
+            
+            Text("Ver 1.0.0")
+                .font(.largeTitle)
+                .multilineTextAlignment(.center)
+                .frame(width: 848, height: 54)
+                .lineSpacing(22)
+            
+            Text("資料更新中...")
+                .font(.largeTitle)
+                .multilineTextAlignment(.center)
+                .frame(width: 848, height: 54)
+                .lineSpacing(22)
+            
+            RoundedRectangle(cornerRadius: 8)
+                .fill(Color(red: 0.50, green: 0.23, blue: 0.27, opacity: 0.50))
+                .frame(width: 323.87, height: 151.83)
+                .padding(.leading, 1)
+                .padding(.top, 4)
+                .padding(.bottom, 1)
+                .frame(width: 324.85, height: 156.73)
+                .padding(.leading, 29)
+                .padding(.trailing, 30)
+                .padding(.top, 29)
+                .padding(.bottom, 30)
+                .frame(width: 384, height: 216)
+                .frame(width: 384, height: 216)
+            
+            Text("遊戲場檢驗系統")
+                .italic()
+                .font(.largeTitle)
+                .multilineTextAlignment(.center)
+                .frame(width: 846, height: 92)
+                .lineSpacing(22)
+                .opacity(0.90)
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
